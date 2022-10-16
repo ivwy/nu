@@ -1,0 +1,30 @@
+.menu {
+    height: 100vh;
+    overflow: hidden;
+    background: #e4e4e4;
+    cursor: -webkit-grab;
+    cursor: grab;
+
+    &.is-dragging {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+    }
+
+    & ul {
+        counter-reset: count;
+        list-style: none;
+    }
+
+    &-item {
+        counter-increment: count;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 120px;
+        line-height: 1.2;
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
