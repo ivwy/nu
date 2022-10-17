@@ -30,7 +30,12 @@
             content: counter(count);
         }
 
-        & a {
+        & b {
+            font-weight: 400;
+            color: var(--first-color-lighten);
+        }
+
+        & a, & b {
             z-index: 1;
             padding: 0;
             border: none;
@@ -47,7 +52,6 @@
             -moz-user-select: none;
             -webkit-appearance: none;
             -webkit-user-select: none;
-            color: var(--text-color-900);
             font-family: var(--body-font);
 
             &:before {
@@ -57,7 +61,7 @@
                 position: absolute;
                 display: inline-block;
                 content: "0" counter(count);
-                color: rgb(139, 139, 139);
+                color: var(--text-color-lighten);
                 transform: translateX(-100%) scale(0.2);
             }
         }
