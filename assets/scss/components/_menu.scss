@@ -30,11 +30,6 @@
             content: counter(count);
         }
 
-        & b {
-            font-weight: 400;
-            color: var(--first-color-lighten);
-        }
-
         & a, & b {
             z-index: 1;
             padding: 0;
@@ -52,7 +47,9 @@
             -moz-user-select: none;
             -webkit-appearance: none;
             -webkit-user-select: none;
+            color: var(--text-black-900);
             font-family: var(--body-font);
+            text-shadow: var(--first-color) 1px 0 10px;
 
             &:before {
                 left: 0;
@@ -64,6 +61,12 @@
                 color: var(--text-color-lighten);
                 transform: translateX(-100%) scale(0.2);
             }
+        }
+
+        & b {
+            font-weight: 400;
+            color: var(--text-black-500);
+            text-shadow: #fff 1px 0 10px;
         }
     }
 }
