@@ -30,7 +30,7 @@
             content: counter(count);
         }
 
-        & a, & b {
+        & a {
             z-index: 1;
             padding: 0;
             border: none;
@@ -60,17 +60,6 @@
                 content: "0" counter(count);
                 color: var(--text-color-lighten);
                 transform: translateX(-100%) scale(0.2);
-            }
-        }
-
-        & b {
-            font-weight: 400;
-            color: var(--main-color-alt);
-            text-shadow: var(--main-color) 1px 0 10px;
-
-            &:before {
-                color: var(--main-color-alt);
-                opacity: .5;
             }
         }
     }
