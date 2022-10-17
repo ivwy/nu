@@ -7,6 +7,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
@@ -21,19 +23,22 @@
 
         <div class="menu">
             <ul class="menu-wrapper">
-                <li class="menu-item"><b onclick="window.location.href='#home'">Home</b></li>
-                <li class="menu-item"><b onclick="window.location.href='#about'">About</b></li>
-                <li class="menu-item"><b onclick="window.location.href='#projects'">Projects</b></li>
+                <li class="menu-item"><b class="tab-button nav-btn-js" onclick="window.location.href='#'">Main</b></li>
+                <li class="menu-item"><b onclick="window.open('https://drive.google.com/drive/folders/1Nz4FlT9EGY6ygKWVQh-q_Z_sv1HKqwn3', '_blank')">Download</b></li>
+                <li class="menu-item"><a onclick="window.open('https://account.xbox.com/ja-jp/profile?gamertag=xSuggyL', '_blank')">Xbox</a></li>
                 <li class="menu-item"><a onclick="window.open('https://www.youtube.com/channel/UC1Df-VljToDozMFJA2RMHMA', '_blank')">YouTube</a></li>
                 <li class="menu-item"><a onclick="window.open('https://github.com/ivwy', '_blank')">GitHub</a></li>
                 <li class="menu-item"><a onclick="window.open('https://instagram.com/prod_wiihy', '_blank')">Instagram</a></li>
                 <li class="menu-item"><a onclick="window.open('https://twitter.com/prod_wiihy', '_blank')">Twitter</a></li>
                 <li class="menu-item"><a onclick="window.open('https://soundcloud.com/wiihy', '_blank')">SoundCloud</a></li>
                 <li class="menu-item"><a onclick="window.open('https://open.spotify.com/user/6vc4qm0jwnpgffgsoa59r1523', '_blank')">Spotify</a></li>
+                <div class="scroll-down"></div>
+
+                <nav class="tab-nav nav-js" data-active="false">
+
+                </nav>
             </ul>
         </div>
-
-        <div class="scroll-down"></div>
         
         <!-- ========= loader scripts ========= -->
         <script src="./assets/js/min/TweenMax.min.js"></script>
@@ -43,5 +48,9 @@
         <!-- ========= menu scripts ========= -->
         <script src="./assets/js/min/gsap.min.js"></script>
         <script src="./assets/js/menu.js"></script>
+
+        <!-- ========= circular ========= -->
+        <script src="./assets/js/iife/index.iife.js"></script>
+        <script src="./assets/js/circular.js"></script>
     </body>
 </html>

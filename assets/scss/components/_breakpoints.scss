@@ -1,5 +1,7 @@
 @media (max-width: 767px) {
-    .menu-item a {
-        font-size: 13vw;
+    .menu-item {
+        & a, & b {
+            font-size: 13vw;
+        }
     }
 }

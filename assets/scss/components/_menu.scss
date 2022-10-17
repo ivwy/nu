@@ -49,7 +49,7 @@
             -webkit-user-select: none;
             color: var(--text-black-900);
             font-family: var(--body-font);
-            text-shadow: var(--first-color) 1px 0 10px;
+            text-shadow: var(--text-black-500) 1px 0 10px;
 
             &:before {
                 left: 0;
@@ -65,8 +65,13 @@
 
         & b {
             font-weight: 400;
-            color: var(--text-black-500);
-            text-shadow: #fff 1px 0 10px;
+            color: var(--main-color-alt);
+            text-shadow: var(--main-color) 1px 0 10px;
+
+            &:before {
+                color: var(--main-color-alt);
+                opacity: .5;
+            }
         }
     }
 }
@@ -83,8 +88,8 @@
     text-align: center;
     position: absolute;
     text-decoration: none;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 2px solid var(--text-black-900);
+    border-bottom: 2px solid var(--text-black-900);
     -webkit-transform: translate(-50%, 0) rotate(45deg);
     animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }

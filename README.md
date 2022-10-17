@@ -19,6 +19,8 @@ null(nu).
 |[TweenMax.min.js](https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js) |v2.1.3 |
 |[wow.min.js](https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js) |v1.1.2 |
 |[three.min.js](https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js) |r108 |
+|[hover-effect.umd.js](https://cdn.jsdelivr.net/npm/hover-effect@1.1.0/dist/hover-effect.umd.js) |v1.1.0 |
+|[index.iife.js](https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js) |v0.0.8 |
 |[locomotive-scroll.min.css](https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css)|v4.1.4 |
 |[bootstrap.min.css](https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css) |v5.0.1 |
 |[swiper-bundle.min.css](https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css) |v8.4.4 |
