@@ -1,3 +1,4 @@
+/*===== base =====*/
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +6,44 @@
     font-family: var(--body-font);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body, button, input, textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
 body {
-    height: 100vh;
-    overflow: hidden;
-    background: var(--bg-black-900);
-    color: var(--text-black-900);
+    font-size: 16px;
+    transition: .3s; // for animation dark
+    line-height: 1.5;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    background-color: var(--container-color);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }

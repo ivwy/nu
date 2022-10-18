@@ -1,6 +1,13 @@
 @import 'config/variables';
 @import 'base/base';
+@import 'base/layout';
+@import 'base/theme';
 @import 'components/loader';
-@import 'components/menu';
-@import 'components/circular.scss';
+@import 'components/header';
+@import 'components/home';
+@import 'components/scroll';
+@import 'components/buttons';
+@import 'components/projects';
+@import 'components/about';
+@import 'components/footer';
 @import 'components/breakpoints';

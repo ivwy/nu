@@ -1,0 +1,62 @@
+/*===== reusable css classes =====*/
+.container {
+    max-width: 968px;
+    margin-left: var(--mb-2-5);
+    margin-right: var(--mb-2-5);
+}
+
+.grid {
+    gap: var(--mb-1-5);
+    display: grid;
+}
+
+.main {
+    overflow: hidden; // for animation
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+.section {
+    padding: 5.5rem 0 1rem;
+
+    &__title, &__subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+        color: hsl(var(--hue), 4%, 35%);
+        font-size: var(--big-font-size);
+    }
+
+    &__subtitle {
+        display: block;
+        color: var(--text-color-light);
+        font-size: var(--smaller-font-size);
+    }
+}
+
+/*===== scroll bar =====*/
+::-webkit-scrollbar {
+    width: .6rem;
+    background: hsl(var(--hue), 4%, 53%);
+    // background: transparent;
+
+    &-thumb {
+        background: hsl(var(--hue), 4%, 29%);
+        border-radius: .5rem;
+        // background: transparent;
+
+        &:hover {
+            background-color: var(--text-color-light);
+        }
+    }
+}

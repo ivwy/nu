@@ -1,4 +1,4 @@
-/*==== preloader animation ====*/
+/*===== preloader animation =====*/
 // anime.min.js, tweenmax.min.js
 var textWrapper = document.querySelector(".preloader-title");
 textWrapper.innerHTML = textWrapper.textContent.replace(

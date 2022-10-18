@@ -7,12 +7,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <!-- ========= import styles ======== -->
+        <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/config/magnific-popup.css">
+        <link rel="stylesheet" href="./assets/css/popup.css">
     </head>
 
-    <body oncontextmenu="return false;">
+    <body>
         <div class="loader">
             <div class="preloader"><h1 class="preloader-title">ken</h1></div>
             <marquee direction="right" scrollamount="15">自死自死自死自死自死自死自死自死</marquee>
@@ -21,34 +23,239 @@
             <marquee direction="left" scrollamount="40">自傷行為自傷行為自傷行為自傷行為</marquee>
         </div>
 
-        <div class="menu">
-            <ul class="menu-wrapper">
-                <li class="menu-item"><a class="tab-button nav-btn-js" onclick="window.location.href='#'">Main</a></li>
-                <li class="menu-item"><a onclick="window.open('https://drive.google.com/drive/folders/1Nz4FlT9EGY6ygKWVQh-q_Z_sv1HKqwn3', '_blank')">Download</a></li>
-                <li class="menu-item"><a onclick="window.open('https://account.xbox.com/ja-jp/profile?gamertag=xSuggyL', '_blank')">Xbox</a></li>
-                <li class="menu-item"><a onclick="window.open('https://www.youtube.com/channel/UC1Df-VljToDozMFJA2RMHMA', '_blank')">YouTube</a></li>
-                <li class="menu-item"><a onclick="window.open('https://github.com/ivwy', '_blank')">GitHub</a></li>
-                <li class="menu-item"><a onclick="window.open('https://instagram.com/prod_wiihy', '_blank')">Instagram</a></li>
-                <li class="menu-item"><a onclick="window.open('https://twitter.com/prod_wiihy', '_blank')">Twitter</a></li>
-                <li class="menu-item"><a onclick="window.open('https://soundcloud.com/wiihy', '_blank')">SoundCloud</a></li>
-                <li class="menu-item"><a onclick="window.open('https://open.spotify.com/user/6vc4qm0jwnpgffgsoa59r1523', '_blank')">Spotify</a></li>
-                <div class="scroll-down"></div>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">KEN</a>
 
-                <nav class="tab-nav nav-js" data-active="false"></nav>
-            </ul>
-        </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__name">prod. wiihy</h1>
+                        <h3 class="home__education">VFX, GFX & SFX artist<br>aka. Suggy, Ken (he/him, 17)</h3>
+                        <div class="home__social">
+                            <span class="home__social-follow">Follow Me</span>
+                            <div class="home__social-links">
+                                <a href="https://twitter.com/prod_wiihy" target="_blank" class="home__social-link"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://instagram.com/prod_wiihy" target="_blank" class="home__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                                <a href="https://www.youtube.com/channel/UC1Df-VljToDozMFJA2RMHMA" target="_blank" class="home__social-link"><i class="bx bxl-youtube"></i></a>
+                                <a href="https://github.com/ivwy" target="_blank" class="home__social-link"><i class="bx bxl-github"></i></a>
+                                <a href="https://open.spotify.com/user/6vc4qm0jwnpgffgsoa59r1523" target="_blank" class="home__social-link"><i class="bx bxl-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects section" id="projects">
+                <span class="section__subtitle">Most Recent Works</span>
+                <h2 class="section__title">Projects</h2>
+    
+                <div class="row">
+                    <div class="projects-filter padd-15">
+                        <button type="button" class="active" data-filter="all">All</button>
+                        <button type="button" data-filter="oct">Oct</button>
+                        <button type="button" data-filter="sep">Sep</button>
+                        <button type="button" data-filter="aug">Aug</button>
+                    </div>
+                </div>
+    
+                <div class="projects-content grid-projects">
+                    <div class="projects-item" data-category="oct">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=kHpUMdrgiLo" class="popup-youtube">
+                                    <img src="./assets/img/project/project10.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="sep">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=MMtDqdLg6Tc" class="popup-youtube">
+                                    <img src="./assets/img/project/project9.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="oct">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=iPRtC9WMULs" class="popup-youtube">
+                                    <img src="./assets/img/project/project8.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="oct">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=j3UPybj3jjQ" class="popup-youtube">
+                                    <img src="./assets/img/project/project7.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="sep">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=Jd4qxl5VOzk" class="popup-youtube">
+                                    <img src="./assets/img/project/project6.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="sep">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=BFjBewJgPp4" class="popup-youtube">
+                                    <img src="./assets/img/project/project5.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="sep">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=Fh2pqKEChas" class="popup-youtube">
+                                    <img src="./assets/img/project/project4.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="aug">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=QHYfnza5qI8" class="popup-youtube">
+                                    <img src="./assets/img/project/project3.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="aug">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=5aiX6fJJceg" class="popup-youtube">
+                                    <img src="./assets/img/project/project2.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="projects-item" data-category="aug">
+                        <article class="projects-grid">
+                            <div class="thumbnail">
+                                <a href="https://www.youtube.com/watch?v=tLz2Kz-w0w8" class="popup-youtube">
+                                    <img src="./assets/img/project/project1.jpg"></img>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about section" id="about">
+                <h2 class="section__title about__title container">About Me</h2>
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <p class="about__description">
+                            Aye, Morning! I don't think we've met before, I'm wiihy from Tokyo, Japan.
+                            I work as a xbox ambassador, but I do enjoy being as a vfx artist nowadays.
+                            I've been uploading my amv contents on cloud for over 4years now.
+                            know why? cuz the process of turning ideas into reality using creative solution was a blast tho.
+                            We reached 20k subscribers on social media 2years ago but ah.. can you stop banning me? oi @YouTube
+                        </p>
+                    </div>
+
+                    <div class="about__group">
+                        <div class="experience__item">
+                            <header class="experience__header">
+                                <i class="bx bx-plus experience__icon"></i>
+                                <h3 class="experience__item-title">
+                                    Software I use to work
+                                </h3>
+                            </header>
+
+                            <div class="experience__content">
+                                <p class="experience__description">
+                                    Visual Studio, blender, After Effects, Photoshop, Live2D, WebStorm, Sketch, Final Cut Pro X(retired), Apple Motion(retired), Vectornator(retired), Spline, Cinema4D.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience__item">
+                            <header class="experience__header">
+                                <i class="bx bx-plus experience__icon"></i>
+                                <h3 class="experience__item-title">
+                                    Languages I use to code
+                                </h3>
+                            </header>
+
+                            <div class="experience__content">
+                                <p class="experience__description">
+                                    Python, JavaScript, C#, C++, PL/pgSQL, React, PHP, HTML, CSS, SCSS.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="experience__item">
+                            <header class="experience__header">
+                                <i class="bx bx-plus experience__icon"></i>
+                                <h3 class="experience__item-title">
+                                    Games I grind for fun
+                                </h3>
+                            </header>
+
+                            <div class="experience__content">
+                                <p class="experience__description">
+                                    Minecraft(retired), osu!, APEX, VALORANT, Genshin Impact(retired), Project SEKAI(retired), Identity V(retired), Sky: Children of the Light(retired), Tower of Fantasy(retired)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <p class="footer__copy">
+            &#169; prod_wiihy. All rigths reserved
+        </p>
+        
+        <a onclick="window.location.href='#'" class="scrollup" id="scroll-up">
+            <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+        </a>
         
         <!-- ========= loader scripts ========= -->
         <script src="./assets/js/min/TweenMax.min.js"></script>
         <script src="./assets/js/min/anime.min.js"></script>
         <script src="./assets/js/loader.js"></script>
 
-        <!-- ========= menu scripts ========= -->
-        <script src="./assets/js/min/gsap.min.js"></script>
-        <script src="./assets/js/menu.js"></script>
-        
-        <!-- ========= circular ========= -->
-        <script src="./assets/js/iife/index.iife.js"></script>
-        <script src="./assets/js/circular.js"></script>
+        <!-- ========= header + accordion ========= -->
+        <script src="./assets/js/nav.js"></script>
+        <script src="./assets/js/accordion.js"></script>
+
+        <!-- ========= popup + filter scripts ========= -->
+        <script src="./assets/js/min/jquery.min.js"></script>
+        <script src="./assets/js/min/jquery.magnific-popup.min.js"></script>
+        <script src="./assets/js/popup.js"></script>
+        <script src="./assets/js/filter.js"></script>
+
+        <!-- ========= scroll script ========= -->
+        <script src="./assets/js/scroll.js"></script>
     </body>
 </html>
