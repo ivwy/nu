@@ -75,13 +75,13 @@
 .accordion-open{
     & .experience__header,
     & .experience__content {
-        background-color: var(--container-color);
+        background-color: #fff;
     }
 
     & .experience__item-title,
     & .experience__description,
     & .experience__icon {
-        color: var(--container-2-color);
+        color: hsl(var(--hue), 8%, 16%);
     }
 
     & .experience__icon {

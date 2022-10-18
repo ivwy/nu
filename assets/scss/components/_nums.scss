@@ -1,0 +1,47 @@
+.nums {
+    &__bg {
+        background-color: var(--first-color-lighten);
+        padding: 3rem 2rem 2rem;
+        border-radius: 1rem;
+    }
+
+    &__container {
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    &__title {
+        color: hsl(var(--hue), 4%, 15%);
+    }
+
+    &__card {
+        border-radius: 1rem;
+        background-color: #fff;
+        padding: 2.5rem 3rem 2rem 1.5rem;
+
+        &:hover .nums__card-number {
+            transform: translateY(-.25rem);
+        }
+
+        &-number {
+            color: #fff;
+            transition: .3s;
+            display: inline-block;
+            padding: .5rem .75rem;
+            border-radius: .25rem;
+            margin-bottom: var(--mb-1-5);
+            font-size: var(--h2-font-size);
+            background-color: var(--first-color-alt);
+        }
+
+        &-title {
+            color: var(--first-color);
+            margin-bottom: var(--mb-0-5);
+        }
+
+        &-description {
+            color: var(--first-color-alt);
+            font-size: var(--small-font-size);
+        }
+    }
+}
