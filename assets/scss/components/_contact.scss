@@ -37,6 +37,10 @@
         position: relative;
         height: 3rem;
         border-bottom: 1px solid var(--text-color-light);
+
+        & input {
+            background: transparent;
+        }
     }
 
     &__input {
