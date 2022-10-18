@@ -1,0 +1,29 @@
+/*===== scroll up =====*/
+.scrollup {
+    right: 1rem;
+    opacity: .8;
+    bottom: -30%;
+    padding: .5rem;
+    transition: .3s;
+    position: fixed;
+    display: inline-flex;
+    border-radius: .25rem;
+    color: #fff;
+    z-index: var(--z-tooltip);
+    background-color: var(--first-color-alt);
+    
+    &__icon {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        opacity: 1;
+        color: var(--container-color);
+        background-color: var(--first-color);
+    }
+}
+
+/* show scroll up */
+.show-scroll {
+    bottom: 3rem;
+}
