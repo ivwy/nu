@@ -6,6 +6,7 @@
         text-align: center;
         -ms-flex: 0 0 100%;
         margin-bottom: 40px;
+        transition: .3s;
 
         & button {
             border: none;
@@ -15,8 +16,7 @@
             font-weight: 700;
             white-space: nowrap;
             padding-bottom: 2px;
-            color: var(--first-color-lighten);
-            transition: all 0.3s ease;
+            color: var(--text-color-lighten);
             text-transform: capitalize;
             background-color: transparent;
             -webkit-transition: all 0.3s ease;
@@ -24,7 +24,7 @@
 
             &.active {
                 position: relative;
-                color: var(--text-color);
+                color: var(--first-color);
             }
 
             &.active::before {
@@ -35,7 +35,7 @@
                 bottom: -.75rem;
                 position: absolute;
                 border-radius: 50%;
-                background-color: var(--text-color);
+                background-color: var(--first-color);
             }
         }
     }

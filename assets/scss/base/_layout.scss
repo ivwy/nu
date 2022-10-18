@@ -27,36 +27,31 @@
 .section {
     padding: 5.5rem 0 1rem;
 
-    &__title, &__subtitle {
-        text-align: center;
-    }
-
-    &__title {
-        margin-bottom: 2rem;
-        color: hsl(var(--hue), 4%, 35%);
+    &__title, &__title-center {
         font-size: var(--big-font-size);
+        margin-bottom: var(--mb-2);
+        color: var(--text-color);
+        line-height: 140%;
+
+        &-center {
+            text-align: center;
+        }
     }
 
     &__subtitle {
         display: block;
+        text-align: center;
         color: var(--text-color-light);
         font-size: var(--smaller-font-size);
     }
 }
 
 /*===== scroll bar =====*/
-::-webkit-scrollbar {
-    width: .6rem;
-    background: hsl(var(--hue), 4%, 53%);
-    // background: transparent;
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
 
     &-thumb {
-        background: hsl(var(--hue), 4%, 29%);
-        border-radius: .5rem;
-        // background: transparent;
-
-        &:hover {
-            background-color: var(--text-color-light);
-        }
+        background: transparent;
     }
 }

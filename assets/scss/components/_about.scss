@@ -2,6 +2,13 @@
 .about {
     background-color: var(--first-color-lighten);
 
+    &__title-center {
+        margin-bottom: 2rem;
+        color: hsl(var(--hue), 4%, 15%);
+        font-size: var(--big-font-size);
+        text-align: center;
+    }
+
     &__container {
         gap: 1.5rem;
         padding: 1.5rem 0;
@@ -13,6 +20,7 @@
     }
 
     &__description {
+        text-align: center;
         color: hsl(var(--hue), 4%, 35%);
     }
 }

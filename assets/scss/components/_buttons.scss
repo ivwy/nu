@@ -1,12 +1,12 @@
 /*===== buttons =====*/
 .button {
-    display: inline-block;
-    background-color: var(--first-color);
     color: #FFF;
-    padding: 1rem 1.75rem;
-    border-radius: .5rem;
-    font-weight: var(--font-medium);
     transition: .3s;
+    border-radius: .5rem;
+    padding: 1rem 1.75rem;
+    display: inline-block;
+    font-weight: var(--font-medium);
+    background-color: var(--first-color);
 
     &:hover {
         background-color: var(--first-color-alt);
@@ -17,9 +17,9 @@
     }
 
     &--flex {
-        display: inline-flex;
-        align-items: center;
         column-gap: .5rem;
+        align-items: center;
+        display: inline-flex;
     }
 
     &--link {
