@@ -9,5 +9,5 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.contact__box`, {origin: 'left'})
-sr.reveal(`.about__group, .contact__form, .projects__grid`, {origin: 'right', interval: 100})
-sr.reveal(`.nums__card, .about__data, .footer`, {interval: 100})
+sr.reveal(`.about__group, .contact__form`, {origin: 'right', interval: 100})
+sr.reveal(`.nums__card, .projects__grid, .about__data, .footer`, {interval: 100})

@@ -35,7 +35,7 @@
         &-follow {
             font-weight: var(--font-medium);
             font-size: var(--smaller-font-size);
-            color: var(--first-color);
+            color: var(--container-color-alt);
             position: relative;
             transform: rotate(90deg);
 
@@ -44,7 +44,7 @@
                 position: absolute;
                 width: 1rem;
                 height: 2px;
-                background-color: var(--first-color);
+                background-color: var(--container-color-alt);
                 right: -45%;
                 top: 50%;
             }
@@ -58,10 +58,11 @@
 
         &-link {
             font-size: 1rem;
-            color: var(--first-color);
-            transition: .3s;
+            color: var(--container-color-alt);
+            transition: .1s;
 
             &:hover {
+                color: var(--first-color);
                 transform: translateX(.25rem);
             }
         }
