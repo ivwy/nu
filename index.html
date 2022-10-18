@@ -29,9 +29,9 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a class="nav__link" onclick="window.location.href='#home'">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" onclick="window.location.href='#projects'">Projects</a></li>
+                        <li class="nav__item"><a class="nav__link" onclick="window.location.href='#about'">About</a></li>
                         <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
                     </ul>
                 </div>
@@ -53,11 +53,11 @@
                             <span class="home__social-follow">Follow Me</span>
 
                             <div class="home__social-links">
-                                <a href="https://twitter.com/prod_wiihy" target="_blank" class="home__social-link"><i class="bx bxl-twitter"></i></a>
-                                <a href="https://instagram.com/prod_wiihy" target="_blank" class="home__social-link"><i class="bx bxl-instagram-alt"></i></a>
-                                <a href="https://www.youtube.com/channel/UC1Df-VljToDozMFJA2RMHMA" target="_blank" class="home__social-link"><i class="bx bxl-youtube"></i></a>
-                                <a href="https://github.com/ivwy" target="_blank" class="home__social-link"><i class="bx bxl-github"></i></a>
-                                <a href="https://open.spotify.com/user/6vc4qm0jwnpgffgsoa59r1523" target="_blank" class="home__social-link"><i class="bx bxl-spotify"></i></a>
+                                <a class="home__social-link" onclick="window.open('https://twitter.com/prod_wiihy', '_blank')"><i class="bx bxl-twitter"></i></a>
+                                <a class="home__social-link" onclick="window.open('https://instagram.com/prod_wiihy', '_blank')"><i class="bx bxl-instagram-alt"></i></a>
+                                <a class="home__social-link" onclick="window.open('https://www.youtube.com/channel/UC1Df-VljToDozMFJA2RMHMA', '_blank')"><i class="bx bxl-youtube"></i></a>
+                                <a class="home__social-link" onclick="window.open('https://github.com/ivwy', '_blank')"><i class="bx bxl-github"></i></a>
+                                <a class="home__social-link" onclick="window.open('https://open.spotify.com/user/6vc4qm0jwnpgffgsoa59r1523', '_blank')"><i class="bx bxl-spotify"></i></a>
                             </div>
                         </div>
                     </div>
@@ -281,10 +281,10 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form action="https://formsubmit.co/wiihy.uwu@gmail.com" method="POST" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
+                                <input type="email" placeholder=" " class="contact__input" required>
                                 <label for="" class="contact__label">Email</label>
                             </div>
 
