@@ -1,13 +1,45 @@
 /*===== animation =====*/
 // scrollreveal.min.js
 
-const sr = ScrollReveal({
+ScrollReveal().reveal('.contact__box',{
+    origin: 'left',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    viewOffset: {
+        top: 80,
+    },
+    reset: true
+});
+
+ScrollReveal().reveal('.about__group, .contact__form',{
+    origin: 'right',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    interval: 100,
+    viewOffset: {
+        top: 80,
+    },
+    reset: true
+});
+
+ScrollReveal().reveal('.nums__card, .about__data, .footer',{
     origin: 'top',
     distance: '60px',
     duration: 2500,
     delay: 400,
+    interval: 100,
+    viewOffset: {
+        top: 80,
+    },
+    reset: true
 });
 
-sr.reveal(`.contact__box`, {origin: 'left'})
-sr.reveal(`.about__group, .contact__form`, {origin: 'right', interval: 100})
-sr.reveal(`.nums__card, .projects__grid, .about__data, .footer`, {interval: 100})
+ScrollReveal().reveal('.projects__grid',{
+    delay: 400,
+    duration: 2500,
+    distance: '60px',
+    origin: 'top',
+    interval: 100
+});
