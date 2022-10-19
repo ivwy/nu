@@ -26,3 +26,12 @@ null(nu).
 |[swiper-bundle.min.css](https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css) |v8.4.4 |
 |[slick.css](http://kenwheeler.github.io) |v1.8.0 |
 |[magnific-popup.css](https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css) |v1.1.0 |
+
+PageSpeed Insights
+Phone: 88, Pc: 99
+<2022.10.18 22:05:52>
+
+// transition .3s
+PageSpeed Insights
+Phone: 87, Pc: 99
+<2022.10.18 22:08:05>

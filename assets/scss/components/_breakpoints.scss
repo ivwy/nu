@@ -26,12 +26,10 @@
         }
     }
 
-    .projects {
-        &__content {
-            grid-template-columns: repeat(1, 250px);
-            justify-content: center;
-            column-gap: .5rem;
-        }
+    .projects__content {
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -46,12 +44,10 @@
         }
     }
 
-    .projects {
-        &__content {
-            grid-template-columns: repeat(2, 200px);
-            justify-content: center;
-            column-gap: .5rem;
-        }
+    .projects__content {
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
   
