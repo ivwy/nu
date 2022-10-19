@@ -4,10 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
-    transition: .3s;
-    position: fixed;
+    z-index: 1042;
     overflow: hidden;
+    position: fixed;
     backdrop-filter: blur(2px);
     opacity: 0.8;
 }
@@ -100,7 +99,7 @@
 }
 
 .mfp-preloader {
-    color: var(--text-color);
+    color: var(--text-black-900);
     position: absolute;
     top: 50%;
     width: auto;
@@ -112,10 +111,10 @@
 }
 
 .mfp-preloader a {
-    color: var(--text-color);
+    color: var(--text-black-700);
 }
 .mfp-preloader a:hover {
-    color: var(--text-color);
+    color: var(--text-black-900);
 }
 
 .mfp-s-ready .mfp-preloader {
@@ -147,21 +146,19 @@ button::-moz-focus-inner {
 }
 
 .mfp-close {
-    top: 0;
-    right: 0;
     width: 44px;
     height: 44px;
-    opacity: 0.65;
-    font-size: 28px;
-    font-style: normal;
     line-height: 44px;
     position: absolute;
-    text-align: center;
-    border-radius: 2rem;
+    right: 0;
+    top: 0;
     text-decoration: none;
+    text-align: center;
+    opacity: 0.65;
     padding: 0 0 18px 10px;
-    color: var(--text-color);
-    text-shadow: var(--first-color);
+    color: var(--text-black-700);
+    font-style: normal;
+    font-size: 28px;
     font-family: Arial, Baskerville, monospace;
     transition: 4s;
 }
