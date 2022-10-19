@@ -18,9 +18,6 @@ ScrollReveal().reveal('.about__group, .contact__form',{
     duration: 2500,
     delay: 400,
     interval: 100,
-    viewOffset: {
-        top: 80,
-    },
     reset: true
 });
 
@@ -30,9 +27,6 @@ ScrollReveal().reveal('.nums__card, .about__data, .footer',{
     duration: 2500,
     delay: 400,
     interval: 100,
-    viewOffset: {
-        top: 80,
-    },
     reset: true
 });
 
