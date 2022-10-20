@@ -27,11 +27,15 @@ null(nu).
 |[slick.css](http://kenwheeler.github.io) |v1.8.0 |
 |[magnific-popup.css](https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css) |v1.1.0 |
 
-PageSpeed Insights
-Phone: 88, Pc: 99
+PageSpeed Insights <br>
+Phone: 88, Pc: 99 <br>
 <2022.10.18 22:05:52>
 
-// transition .3s
-PageSpeed Insights
-Phone: 87, Pc: 99
+// transition .3s  <br>
+PageSpeed Insights  <br>
+Phone: 87, Pc: 99  <br>
 <2022.10.18 22:08:05>
+
+PageSpeed Insights  <br>
+Phone: 86, Pc: 99  <br>
+<2022.10.20 10:29:05>
