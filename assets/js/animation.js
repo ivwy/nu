@@ -27,6 +27,7 @@ ScrollReveal().reveal('.nums__card, .about__data, .footer',{
     interval: 100,
 });
 
+/*
 ScrollReveal().reveal('.projects__grid',{
     delay: 400,
     duration: 2500,
@@ -34,3 +35,4 @@ ScrollReveal().reveal('.projects__grid',{
     origin: 'top',
     interval: 100
 });
+*/
